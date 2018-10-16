@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+        <TextView android:text="@string/text_prompt"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/text" 
+                  android:layout_height="wrap_content" 
+                  android:layout_width="match_parent" 
+                  android:inputType="textMultiLine">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <TextView android:text="@string/language_prompt"
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/language_choices"
+             android:prompt="@string/language_prompt"
+             android:layout_width="match_parent" 
+             android:layout_height="wrap_content"/>
+    <Button android:text="@string/button_prompt" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:onClick="doubleTranslate"/>
+    <ScrollView android:layout_height="wrap_content" 
+                android:layout_width="match_parent">
+        <LinearLayout android:orientation="vertical" 
+                      android:layout_width="match_parent" 
+                      android:layout_height="match_parent">
+            <TextView android:text="@string/intermediate_result_prompt"
+                      android:layout_width="match_parent" 
+                      android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/intermediate_result"
+                      android:text=" "
+                      android:textColor="@color/result_foreground"
+                      android:layout_width="match_parent" 
+                      android:layout_height="wrap_content"/>
+            <TextView android:text="@string/final_result_prompt"
+                      android:layout_width="match_parent" 
+                      android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/final_result"
+                      android:text=" "
+                      android:textColor="@color/result_foreground"
+                      android:layout_width="match_parent" 
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

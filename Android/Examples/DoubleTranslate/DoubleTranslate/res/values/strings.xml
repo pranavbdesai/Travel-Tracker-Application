@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoubleTranslate</string>
+    <string name="text_prompt">Text to Translate:&#160;</string>
+    <string name="language_prompt">Intermediate Language:</string>
+    <string name="button_prompt">Double Translate</string>
+    <string name="intermediate_result_prompt">Intermediate Result:</string>
+    <string name="final_result_prompt">Final Result:</string>
+</resources>
